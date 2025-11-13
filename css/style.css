@@ -11,6 +11,9 @@
 *	Edit this section
 *
 * ======================================================= */
+
+
+
 body {
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;
@@ -104,6 +107,88 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (max-width: 768px) {
     #colorlib-page {
       padding-top: 5em; } }
+
+
+      /* Portfolio Grid Layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Card Design */
+.article {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.blog-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+/* Overlay */
+.blog-img .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-img:hover .overlay {
+  opacity: 1;
+}
+
+/* Text Section */
+.desc {
+  padding: 15px;
+  text-align: left;
+}
+
+.desc h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.desc p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 #colorlib-main-nav {
   position: absolute;
