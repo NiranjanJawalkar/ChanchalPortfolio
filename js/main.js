@@ -104,7 +104,8 @@
 		owl.owlCarousel({
 			animateOut: 'fadeOut',
 		   animateIn: 'fadeIn',
-		   autoplay: true,
+		   autoplay: false,
+		   // autoplay off
 		   loop:true,
 		   margin:0,
 		   nav:true,
